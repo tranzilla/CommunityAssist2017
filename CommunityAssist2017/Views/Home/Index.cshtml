@@ -15,14 +15,17 @@
         <th>@Html.DisplayNameFor(model => model.GrantTypemaximum)</th>
 
     </tr>
+  
     <!-- This loops through each item and displays it-->
     @foreach (var item in Model)
     {
+        <tr>
         <td>@Html.DisplayFor(model => item.GrantTypeKey)</td>
         <td>@Html.DisplayFor(model => item.GrantTypeName)</td>
         <td>@Html.DisplayFor(model => item.GrantTypeDescription)</td>
         <td>@Html.DisplayFor(model => item.GrantTypemaximum)</td>
+        </tr>
     }
-
+   
 </table>
 
