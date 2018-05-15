@@ -9,7 +9,7 @@ namespace CommunityAssist2017.Models
     {
         public string LastName { get; set; }
         public string FirstName { get; set; }
-        public string Email { get; set; }s
+        public string Email { get; set; }
         public string Phone { get; set; }
         public string PlainPassword { get; set; }
         public string Apartment { get; set; }
