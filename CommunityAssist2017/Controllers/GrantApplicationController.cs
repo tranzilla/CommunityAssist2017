@@ -33,6 +33,7 @@ namespace CommunityAssist2017.Controllers
 
                 ga.PersonKey = (int)Session["PersonKey"];
                 ga.GrantAppicationDate = DateTime.Now;
+                ga.GrantApplicationStatusKey = 1;
                 db.SaveChanges();
                 Message m = new Message("Thank you. We have recieved your application.");
                 return RedirectToAction("Result", m);
